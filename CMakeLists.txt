@@ -9,7 +9,7 @@ add_compile_definitions(INPUT_PATH="${CMAKE_SOURCE_DIR}/input")
 include(CTest)
 
 set(skip_days 16 19)
-foreach(day RANGE 1 21)
+foreach(day RANGE 1 22)
     if (day IN_LIST skip_days)
         continue()
     endif()
