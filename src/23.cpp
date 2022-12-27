@@ -14,13 +14,7 @@ struct Point {
   struct Hash {
     size_t operator()(const Point &p) const { return (static_cast<int64_t>(p.x) << 32) + p.y; }
   };
-
-  auto operator+=(const Point &other) {
-    x += other.x;
-    y += other.y;
-  }
   Point operator+(const Point &other) const { return {x + other.x, y + other.y}; }
-  Point operator-(const Point &other) const { return {x - other.x, y - other.y}; }
   bool operator==(const Point &) const = default;
 };
 
