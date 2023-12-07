@@ -1,16 +1,5 @@
 # Advent of Code 2022
-Here are my solutions written in (hopefully) modern C++
+Solutions for [Advent of Code](https://adventofcode.com/) in C++20
 
-## Prerequisites
-* C++20 compiler
-* CMake 3.24+
-
-## One way to build
-```shell
-mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make -j
-ctest
-```
 ## License
 [MIT](LICENSE)
