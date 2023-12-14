@@ -12,7 +12,6 @@ if(NOT DEFINED ENV{AOC_SESSION})
     message(FATAL_ERROR "AOC_SESSION token is not set")
 endif()
 
-set(skip_days 19)
 foreach(day RANGE 1 23)
     if (day IN_LIST skip_days)
         continue()
